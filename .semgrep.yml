@@ -1,0 +1,9 @@
+rules:
+  - id: sequelize-raw-query
+    patterns:
+      - pattern: $DATABASE.sequelize.query(...)
+    severity: ERROR
+    message: |
+      query should not be used.
+    languages:
+      - javascript
